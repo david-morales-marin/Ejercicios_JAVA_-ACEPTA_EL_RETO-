@@ -1,0 +1,2 @@
+En esta sección  he aprendido que los comandos básicos de Linux, es por línea de comandos, en donde uno puede aplicar los al escribir en cada linea y con esto se logran ejecutar dichos comandos para realizar  las diferentes actividdes. 
+también entendí que MARKDOW es un programa muy similar al html, para uno aprender a  programar de una manera organizada. sus distintos comandos y formas de poder realizar todas las tareas asignadas. 
