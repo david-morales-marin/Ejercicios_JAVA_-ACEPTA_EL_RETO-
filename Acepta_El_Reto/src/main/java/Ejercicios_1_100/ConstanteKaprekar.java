@@ -12,17 +12,25 @@ public class ConstanteKaprekar {
 
         int numeroRecibe;
         int iteracion = 1;
+        int acumTotal;
         Scanner numeroKaprekar = new Scanner(System.in);
-        System.out.println("Ingrese un numero de 4 digitos: ");
+        System.out.println("Elige un número de cuatro dígitos que tenga al menos dos diferentes (es válido colocar el dígito 0 al principio, por lo que el número 0009 es válido): ");
         numeroRecibe = numeroKaprekar.nextInt();
 
-        while (numeroRecibe != 6174){
-            System.out.println("El numero en iteracion" + iteracion +" es : "+  numeroRecibe);
-            numeroRecibe = calcular(numeroRecibe);
-            iteracion++;
-        }
+             if(numeroRecibe == 6174){
 
-        System.out.println("numero final: " + numeroRecibe);
+                 System.out.println(0);
+
+             } else  if (numeroRecibe != 6174) {
+
+                 while (numeroRecibe != 6174) {
+                     numeroRecibe = calcular(numeroRecibe);
+                     iteracion++;
+                 }
+                 System.out.println(iteracion - 1);
+
+             }
+
     }
 
 
@@ -32,9 +40,6 @@ public class ConstanteKaprekar {
         int numDigitos = 10;
         int valorFinal;
 
-        // if(  valorFinal = 6174){
-        //   System.out.println();
-        // }
         do {
             numero = numeroRecibe / numDigitos;
             if (numero > 0) {
@@ -61,7 +66,6 @@ public class ConstanteKaprekar {
                     myArray[x + 1] = acum;
                 }
 
-
         int numdesc = 0;
 
         for (int i = 0; i < cantidadDigitos; i++)
@@ -72,12 +76,7 @@ public class ConstanteKaprekar {
         for (int i = 0; i < myArray.length; i++)
             numasc = numasc + myArray[i] * (int) Math.pow(10, cantidadDigitos - 1 - i);
 
-        //   System.out.println("EL número descentente es: " + numdesc);
-        //  System.out.println("EL número ascendente es: " + numasc);
-
         valorFinal = numdesc - numasc;
-        //   valorFinal++;
-        System.out.println( numdesc + " - " + numasc + " = " + valorFinal);
 
         return valorFinal;
     }
