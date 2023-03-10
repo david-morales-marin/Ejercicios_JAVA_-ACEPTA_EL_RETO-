@@ -21,7 +21,14 @@ public class ConstanteKaprekar {
 
                  System.out.println(0);
 
-             } else  if (numeroRecibe != 6174) {
+             } else if(numeroRecibe == 0000 | numeroRecibe == 1111 | numeroRecibe == 2222 |
+                       numeroRecibe == 3333 | numeroRecibe == 4444 | numeroRecibe == 5555 |
+                       numeroRecibe == 6666 | numeroRecibe == 7777 | numeroRecibe == 8888 |
+                       numeroRecibe == 9999){
+                 System.out.println(8);
+             }
+
+             else  if (numeroRecibe != 6174) {
 
                  while (numeroRecibe != 6174) {
                      numeroRecibe = calcular(numeroRecibe);
